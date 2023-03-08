@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>CURRICULUM VITAE</h1>
+	<!-- Barra de navegación -->
+	<div class="navbar">
+		<a class="active" href="#" onclick="openSection(event, 'inicio')">Inicio</a>
+		<a href="#" onclick="openSection(event, 'antecedentes')">Antecedentes</a>
+		<a href="#" onclick="openSection(event, 'contactar')">Contactar</a>
+	</div>
+
+	<!-- Secciones -->
+	<div id="inicio" class="section active">
+        <img src="foto_perfil.png" alt="Foto de perfil">
+		<h2>Juan Peréz</h2>
+
+		<p>¡Hola! Soy un programador apasionado y comprometido con el desarrollo
+             de soluciones innovadoras y eficientes. Tengo una amplia experiencia
+             en el diseño, desarrollo y mantenimiento de aplicaciones de software,
+             utilizando una variedad de lenguajes de programación y tecnologías. 
+             Soy capaz de trabajar tanto en equipo como de forma autónoma, y me gusta
+             colaborar con otros desarrolladores para encontrar soluciones creativas a
+             los desafíos tecnológicos. Siempre estoy buscando formas de mejorar
+             mi habilidad técnica y mantenerme actualizado con las últimas tendencias y
+             herramientas en el mundo de la programación. Mi objetivo es crear software
+             de alta calidad y útil para mejorar la vida de las personas.</p>
+	</div>
+
+	<div id="antecedentes" class="section">
+		<h2>Formación profesional</h2>
+
+	    <ol>
+            <ul>-Tengo un título de ingeniería en Informática de la Universidad.</ul>
+            <ul>-Certificación de Desarrollo Web: HTML, CSS y JavaScript, y el uso de bibliotecas y frameworks como React y Angular.</ul>
+            <ul>-Título de Especialización en Inteligencia Artificial.</ul>
+            <ul>-Certificación de Desarrollo de Aplicaciones Móviles.</ul>
+            <ul>-Certificación en Seguridad Informática.</ul>
+        </ol>
+
+		<h2>Experiencia laboral</h2>
+		
+        <ol>
+            <ul>-Desarrollador de aplicaciones móviles en una startup de tecnología: Trabajé en una pequeña empresa de tecnología donde
+                fui responsable del desarrollo de aplicaciones móviles para iOS y Android. Utilicé lenguajes de programación
+                como Swift y Kotlin, así como herramientas como Xcode y Android Studio para crear aplicaciones que se conectaran con APIs
+                externas y permitieran la gestión de datos del usuario.</ul>
+            <ul>-Programador web en una agencia digital: Trabajé en una agencia de marketing digital donde desarrollé y mantuve sitios web
+                para clientes en diversos sectores. Utilicé lenguajes de programación como HTML, CSS, JavaScript y PHP, así como herramientas
+                como WordPress y Drupal para crear sitios web que fueran intuitivos y fáciles de usar.</ul>
+            <ul>-Desarrollador de software de automatización industrial: Trabajé para una empresa que se especializa en la automatización
+                industrial, desarrollando software personalizado para controlar procesos industriales. Utilicé lenguajes de programación
+                como C++ y Python, así como herramientas como LabVIEW y MATLAB para crear soluciones de software que permitieran
+                la automatización de procesos y la toma de decisiones en tiempo real.</ul>
+            <ul>-Ingeniero de software en una empresa de robótica: Trabajé para una empresa que se dedica al desarrollo de robots autónomos
+                para diversas aplicaciones. Fui responsable del desarrollo de software que permitía a los robots realizar tareas específicas,
+                como la navegación, la manipulación de objetos y la interacción con el entorno. Utilicé lenguajes de programación como
+                C++ y Python, así como herramientas como ROS (Robot Operating System) para crear soluciones de software que permitieran
+                a los robots funcionar de manera autónoma.</ul>
+        </ol>
+	</div>
+
+	<div id="contactar" class="section">
+		<h2>Ingrese sus datos y me comunicare a su brevedad</h2>
+		<form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombres">
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Apellidos">
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ejemplo@mail.com">
+          
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="00000000">
+          
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Texto"></textarea>
+          
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+    </body>
+</html>
